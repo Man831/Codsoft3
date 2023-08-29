@@ -1,0 +1,13 @@
+console.log("RAUNNING")
+document.querySelector('.cross').style.display='none';
+document.querySelector('.hamburger').addEventListener("click",()=>{
+    document.querySelector('.side').classList.toggle('sidebargo')
+    if(document.querySelector('.side').classList.contains('sidebargo')){
+        document.querySelector('.ham').style.display='inline'
+        document.querySelector('.cross').style.display='none'
+    }
+    else{
+        document.querySelector('.cross').style.display='inline'
+        document.querySelector('.ham').style.display='none' 
+    }
+})
